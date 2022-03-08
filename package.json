@@ -1,0 +1,45 @@
+{
+  "name": "school_questionnaires_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "babel-node": "babel-node --presets=@babel/preset-env",
+    "dev": "nodemon src/index.js --exec babel-node",
+    "nazaries": "nodemon --exec npm run babel-node src/index.js",
+    "build": "./node_modules/.bin/babel src --out-dir lib",
+    "start": "node lib/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TFGConjunto/school_questionnaires_backend.git"
+  },
+  "keywords": [],
+  "author": "Néstor Fernández <extraertond@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TFGConjunto/school_questionnaires_backend/issues"
+  },
+  "homepage": "https://github.com/TFGConjunto/school_questionnaires_backend#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "md5": "^2.3.0",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.2.5",
+    "node-env-file": "^0.1.8",
+    "regenerator-runtime": "^0.13.9",
+    "sequelize": "^6.6.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.13.16",
+    "@babel/node": "^7.13.13",
+    "@babel/preset-env": "^7.13.15",
+    "nodemon": "^2.0.7",
+    "prettier": "2.3.2"
+  }
+}
